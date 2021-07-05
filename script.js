@@ -22,7 +22,6 @@ function mouseDragged(){
   stroke(color);
   if(type == "pencil"){
     line(pmouseX, pmouseY, mouseX, mouseY);
-    white();
   } 
   // else if(method == "eraser"){
   //   ellipse(mouseX, mouseY, size, size);
@@ -31,6 +30,7 @@ function mouseDragged(){
     ellipse(mouseX, mouseY, size, size);
   }
 }
+
 // const eraser = document.getElementById("pen-eraser")
 // eraser.addEventListener('click',(e)=>{
 //   // console.log("yes")
@@ -39,40 +39,42 @@ function mouseDragged(){
 //   ellipse(mouseX, mouseY, size, size);
 // })
 _("#reset-canvas").addEventListener("click", function(){
- window.document.reload(); 
+  background(255);
 });
 _("#save-canvas").addEventListener("click",function(){
   saveCanvas(canvas, "sketch", "png");
 });
-let colorpicker=document.querySelector("#base");
-colorpicker.addEventListener('change', (event) => {
-document.body.style.backgroundColor = event.target.value;
-});
 
-function white(){
-  fill(255);
-}
-function defaultbg() {
-document.body.style.backgroundColor = "white";
-}
-function myFunction1() {
+  let colorpicker=document.querySelector("#base");
+  colorpicker.addEventListener('change', (event) => {
+    document.body.style.backgroundColor = event.target.value;
+  });
+  
+  function defaultbg() {
+    document.body.style.backgroundColor = "white";
+  }
+  function myFunction1() {
   document.body.style.backgroundColor = "red";
-}
-function myFunction2() {
-  document.body.style.backgroundColor = "orange";
-}
-function myFunction3() {
-  document.body.style.backgroundColor = "yellow";
-}
-function myFunction4() {
-  document.body.style.backgroundColor = "blue";
-}
-function myFunction5() {
-  document.body.style.backgroundColor = "green";
-}
-function myFunction6() {
-  document.body.style.backgroundColor = "purple";
-}
-function myFunction7() {
-  document.body.style.backgroundColor = "black";
-}
+  }
+  function myFunction2() {
+    document.body.style.backgroundColor = "orange";
+  }
+  function myFunction3() {
+    document.body.style.backgroundColor = "yellow";
+  }
+  function myFunction4() {
+    document.body.style.backgroundColor = "blue";
+  }
+  function myFunction5() {
+    document.body.style.backgroundColor = "green";
+  }
+  function myFunction6() {
+    document.body.style.backgroundColor = "purple";
+  }
+  function myFunction7() {
+    document.body.style.backgroundColor = "black";
+  }
+
+
+
+

@@ -1,0 +1,234 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Permanent+Marker&family=Qahiri&display=swap');
+* {
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+  /* border: 1px solid black; */
+}
+body {
+    background:#555;
+}
+
+/* APP STARTS */
+
+/* NAVBAR STARTS */
+.app {
+  position:fixed;
+  /* top:50%; */
+  /* left:50%; */
+  /* transform:translate(-50%,-50%); */
+  width:100%;
+  height:100%;
+  font-family:"Raleway", sans-serif;
+}
+.navbar{
+  font-family: 'Architects Daughter', cursive;
+  font-size: 20px;
+  height: 64px;
+  line-height: 64px;
+  color: #b97979;
+  background-color: rgb(253, 242, 242);
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 0px 30px 0.1px rgb(0 0 0 / 25%);
+  z-index: 1;
+  
+}
+.navbar .container{
+  /* max-width: 1300px; */
+  margin: 0px 10%;
+}
+.navbar img{
+  height: 64px;
+  box-sizing: border-box;
+  padding: 5px;
+  float: left;
+}
+.navbar .navbar-brand{
+  float: left;
+}
+/* NAVBAR ENDS */
+
+/* TOOLBAR STARTS */
+.app .control-bar{
+  /* padding-left: 100px; */
+  background:#ddd;
+  height: 50px;
+  margin-top: 60px;
+  
+}
+
+.app .controls {
+  margin-left: 25%;
+  height:100%;
+  display:flex;
+  align-items:center;
+  padding:0px 5px;
+}
+
+.app .controls .type,
+.app .controls .size,
+.app .controls .color {
+  margin: 0px 3%;
+}
+.app .controls .type input {
+  display:none;
+  
+}
+.app .controls .type label {
+  width:30px;
+  height:30px;
+  display:inline-block;
+  text-align:center;
+  line-height:30px;
+  margin:10px 10px;
+  cursor:pointer;
+}
+.app .controls .type input:checked + label {
+  background:#111;
+  color:#eee;
+  border-radius:50%;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+  
+  opacity: 1;
+  
+}
+.app .controls .size input {
+  height:25px;
+}
+.app .controls .actions {
+  flex:1;
+  text-align:right;
+}
+.app .controls .actions button {
+  padding:5px 10px;
+  cursor:pointer;
+}
+
+.control-main{
+  margin-left: 10%;
+  
+}
+
+.control-main button {
+  background-color: #e0e4e0; 
+  border: none;
+  color: black;
+  padding: 5px 7px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-align: right;
+  font-size: 100%;
+  margin: 4px 5px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  
+}
+.dropbtn {
+  background-color: transparent;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.btn0
+{
+  height:30px;
+  width:30px;
+  border-radius: 50px;
+  background-color:white;
+  margin-top: 15px;
+}
+.btn1
+{
+  height:30px;
+  width:30px;
+  border-radius: 50px;
+  background-color:red;
+  
+}
+.btn2
+{
+  height:30px;
+  width:30px;
+  border-radius: 50px;
+  background-color:orange;
+  
+}
+.btn3
+{
+  height:30px;
+  width: 30px;
+  border-radius: 50px;
+  background-color:yellow;
+  
+  
+}
+.btn4
+{
+  height:30px;
+  width: 30px;
+  border-radius: 50px;
+  background-color:blue;
+  margin-top: 10px;
+  
+}
+.btn5
+{
+  height:30px;
+  width: 30px;
+  border-radius: 50px;
+  background-color:green;
+  margin-top: 10px;
+  
+}
+.btn6
+{
+  height:30px;
+  width: 30px;
+  border-radius: 50px;
+  background-color:purple;
+  margin-top: 10px;
+  
+}
+.btn7
+{
+   height:30px;
+   width: 30px;
+   border-radius: 50px;
+   background-color:black;
+   margin-top: 10px;
+   
+ }
+ 
+ .dropdown-content a:hover {background-color: #ddd;}
+ 
+ .dropdown:hover .dropdown-content {display: block;}
+ 
+ .dropdown:hover .dropbtn {background-color: transparent;}
+ /* TOOLBAR ENDS */
+
+ /* APP ENDS */
+
+ 

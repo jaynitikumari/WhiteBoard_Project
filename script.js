@@ -6,15 +6,7 @@ function setup(){
   canvas.parent("canvas-wrapper");
    defaultbg();
 }
-
-// function myFunction() {
-  //   document.body.style.backgroundColor = "red";
-// }
-// function myFunction2() {
-//   document.body.style.backgroundColor = "white";
-// }
 function mouseDragged() {
-  // let type = _("#pen-pencil").checked?"pencil":"brush";
   let type;
   if (_("#pen-pencil").checked) {
     type = "pencil"
@@ -25,7 +17,6 @@ function mouseDragged() {
   else {
     type = "eraser"
   }
-  // let method =_("#pen-eraser").checked?"eraser":"pencil";
   let size = parseInt(_("#pen-size").value) || 10;
   let color = _("#pen-color").value;
   fill(color);
@@ -36,9 +27,6 @@ function mouseDragged() {
   else if (type == "brush") {
     ellipse(mouseX, mouseY, size, size);
   }
-  // else if(method == "eraser"){
-  //   ellipse(mouseX, mouseY, size, size);
-  // }
   else {
     const bgcolor = document.getElementById("body")
     // console.log(bgcolor.style.cssText)

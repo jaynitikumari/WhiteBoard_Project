@@ -16,7 +16,7 @@ function setup(){
 function mouseDragged(){
   let type = _("#pen-pencil").checked?"pencil":"brush";
   // let method =_("#pen-eraser").checked?"eraser":"pencil";
-  let size = parseInt(_("#pen-size").value);
+  let size = parseInt(_("#pen-size").value) || 10;
   let color = _("#pen-color").value;
   fill(color);
   stroke(color);

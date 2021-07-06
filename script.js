@@ -42,7 +42,7 @@ function mouseDragged() {
   else {
     const bgcolor = document.getElementById("body")
     // console.log(bgcolor.style.cssText)
-    size = parseInt(_("#pen-size").value) || 10;
+    size = parseInt(_("#pen-size").value) || 20;
     color = bgcolor.style.backgroundColor;
     fill(color);
     stroke(color);

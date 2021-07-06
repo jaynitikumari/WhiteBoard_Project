@@ -2,7 +2,7 @@
 ## Hey there, welcome to our project.
 
 ### It's a WhiteBoard Drawing WebApp developed with HTML,CSS, & JavaScript using Canvas.
-### You can visit the working WebApp through this link :- https://whiteboard-project.netlify.app/
+### You can visit the working WebApp through this link :- https://whiteboard-project.netlify.app/ or https://whiteboard-project.herokuapp.com/
 ### Do, check it out and give us your valuable feedback and suggestions to improve it.❤😁
 
 ### Made with love❤ by <a href="https://github.com/aditaya-burnwal/">me</a>, <a href="https://github.com/jaynitikumari">Jayniti Kumari</a>, <a href="https://github.com/AnnuKumari-web">Annu Kumari</a>, <a href="https://github.com/springspoon">Himanshi</a>.

@@ -39,7 +39,7 @@ function mouseDragged() {
 }
 
 _("#reset-canvas").addEventListener("click", function(){
-  background(255);
+  setup();
 });
 _("#save-canvas").addEventListener("click",function(){
   saveCanvas(canvas, "sketch", "png");

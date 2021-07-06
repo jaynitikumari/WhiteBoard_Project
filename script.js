@@ -13,31 +13,43 @@ function setup(){
 // function myFunction2() {
 //   document.body.style.backgroundColor = "white";
 // }
-function mouseDragged(){
-  let type = _("#pen-pencil").checked?"pencil":"brush";
+function mouseDragged() {
+  // let type = _("#pen-pencil").checked?"pencil":"brush";
+  let type;
+  if (_("#pen-pencil").checked) {
+    type = "pencil"
+  }
+  else if (_("#pen-brush").checked) {
+    type = "brush"
+  }
+  else {
+    type = "eraser"
+  }
   // let method =_("#pen-eraser").checked?"eraser":"pencil";
   let size = parseInt(_("#pen-size").value) || 10;
   let color = _("#pen-color").value;
   fill(color);
   stroke(color);
-  if(type == "pencil"){
+  if (type == "pencil") {
     line(pmouseX, pmouseY, mouseX, mouseY);
-  } 
+  }
+  else if (type == "brush") {
+    ellipse(mouseX, mouseY, size, size);
+  }
   // else if(method == "eraser"){
   //   ellipse(mouseX, mouseY, size, size);
   // }
-  else{
+  else {
+    const bgcolor = document.getElementById("body")
+    // console.log(bgcolor.style.cssText)
+    size = parseInt(_("#pen-size").value) || 10;
+    color = bgcolor.style.backgroundColor;
+    fill(color);
+    stroke(color);
     ellipse(mouseX, mouseY, size, size);
   }
 }
 
-// const eraser = document.getElementById("pen-eraser")
-// eraser.addEventListener('click',(e)=>{
-//   // console.log("yes")
-//   // fill(color);
-//   stroke(color);
-//   ellipse(mouseX, mouseY, size, size);
-// })
 _("#reset-canvas").addEventListener("click", function(){
   background(255);
 });

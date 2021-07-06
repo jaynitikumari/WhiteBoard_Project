@@ -31,7 +31,7 @@ function mouseDragged() {
   fill(color);
   stroke(color);
   if (type == "pencil") {
-    line(pmouseX, pmouseY, mouseX, mouseY);
+    line(mouseX, mouseY, size, size);
   }
   else if (type == "brush") {
     ellipse(mouseX, mouseY, size, size);

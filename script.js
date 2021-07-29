@@ -2,7 +2,7 @@ function _(selector){
   return document.querySelector(selector);
 }
 function setup(){
-  let canvas = createCanvas(1536, 728);
+  let canvas = createCanvas(15036, 728);
   canvas.parent("canvas-wrapper");
    defaultbg();
 }
